@@ -22,15 +22,10 @@ except:
 	exit()
 
 # Sets origin coordinates. Defaults to 0, 0
-try:	
-	x_orig = args.xy[0]
-	y_orig = args.xy[1]
-
-	x = x_orig
-	y = y_orig
-except:
-	print "Error determining origin coordinates."
-	exit()
+x_orig = args.xy[0]
+y_orig = args.xy[1]
+x = x_orig
+y = y_orig
 
 # Resizes the image to provided width and height. Defaults to image's actual size.
 if args.size != None:
