@@ -10,7 +10,6 @@ parser.add_argument('--xy', type=int, nargs=2, metavar=('X', 'Y'), default=(0, 0
 parser.add_argument('--size', '-s', type=int, nargs=2, metavar=('WIDTH', 'HEIGHT'), help='Resize the image to the given width and height.')
 parser.add_argument('--cmd', '-c', type=str, default='ping -6 -c 4', help="What command to use with the IPv6 addresses. Defaults to 'ping -6 -c 4'.")
 
-
 args = parser.parse_args()
 
 
@@ -50,6 +49,6 @@ for pixel in im.getdata():
 	x = x + 1
 	
 	# Returns x to origin if it goes beyond the image's size
-	if x > x_orig + size[0]:
+	if x >= x_orig + size[0]:
 		x = x_orig
 		y = y + 1
