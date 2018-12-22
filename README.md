@@ -12,10 +12,8 @@ positional arguments:
 
 optional arguments:
   -h, --help            show this help message and exit
-  --xy X Y              Where to display the image on the LED wall. The origin
-                        is from the top-left of the image.
+  --xy X Y              Where to display the image on the LED wall. The origin is from the top-left of the image.
   --size WIDTH HEIGHT, -s WIDTH HEIGHT
                         Resize the image to the given width and height.
-  --cmd CMD, -c CMD     What command to use with the IPv6 addresses. Defaults
-                        to 'ping -6 -c 4'.
+  --cmd CMD, -c CMD     What command to use with the IPv6 addresses. Defaults to 'ping -6 -c 4'.
 ```
